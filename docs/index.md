@@ -1,26 +1,59 @@
 ---
-title: Welcome to MkDocs
-description: MkDocs is a fast, simple and downright gorgeous static site generator that's geared towards project documentation.
 hide:
   - navigation
   - toc
 ---
 
-# Welcome to MkDocs
+# AboutMe
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+$$
+I^{M}Q_C{K}
+$$
 
-## Commands
+## Favorite Animation
 
-- `mkdocs new [dir-name]` - Create a new project.
-- `mkdocs serve` - Start the live-reloading docs server.
-- `mkdocs build` - Build the documentation site.
-- `mkdocs -h` - Print help message and exit.
+- 爱，死亡和机器人
+  无解
 
-## Project layout
-```
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
-```
+- 死神 --> 龙与魔女
+  久保的顶级潮流
+
+- 混沌武士
+  公鸡，鱼和向日葵的故事
+
+- 轻音少女 --> 吹响吧！上低音号 --> 紫罗兰永恒花园
+  从 k-on 到 Sound! Euhponium，从京吹再到京紫，京阿尼的全面进化（请无视京吹第三季）
+
+- 乒乓
+  汤浅政明出品的一朵奇葩
+
+- 拳愿阿修罗
+  世界第一的三渲二技术以及格斗分镜
+
+- 机动战士高达 00
+  谁不喜欢高达？
+
+- 一拳超人
+  最强
+
+- 进击的巨人
+  一部完整的作品
+
+- 猫和老鼠/海绵宝宝
+  经典永不过时
+
+## Favorite TV Shows
+
+- 绝命毒师
+- 我的大叔
+- 黑袍纠察队
+
+## Favorite Movies
+
+- 芬奇
+- 海上钢琴师
+- 机械师
+- 大佛普拉斯
+- 教父三部曲
+- 环太平洋
+- 英雄本色

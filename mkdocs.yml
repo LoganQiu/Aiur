@@ -1,5 +1,5 @@
-site_name: My site
-site_description: haha
+site_name: 韬钤深处
+site_description: 无
 site_url: https://loganqiu.github.io
 # Configuration
 theme:
@@ -93,7 +93,6 @@ hooks:
 
 nav:
   - Home: index.md
-  - Tags: tags.md
   - Wiki:
       - wiki/index.md
       - Anime Intro: wiki/anime-intro.md
@@ -104,16 +103,25 @@ nav:
       - Music Distribution: wiki/music-distribution.md
       - Protocol: wiki/protocol.md
       - Proxy Platform: wiki/proxy-platform.md
+      - 奇门遁甲: wiki/qimendunjia.md
   - Blog:
       - blog/index.md
       - blog/tags.md
+  - Repost:
+      - repost/index.md
+      - Side Project Guide: repost/side-project-guide.md
+      - 为什么国内 BT 环境如此恶劣？: repost/why-domestic-BT-env-so-bad.md
+      - 当你以为自己用的是苹果系统字体: repost/when-you-think-using-Apple-fonts.md
+      - 百度之死: repost/the-death-of-Baidu.md
 
 extra_css:
   - stylesheets/extra.css
 
 extra_javascript:
-  - https://cdn.jsdelivr.net/npm/abcjs@6.2.3/dist/abcjs-basic-min.js
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
   - javascripts/abc.js
+  - https://cdn.jsdelivr.net/npm/abcjs@6.2.3/dist/abcjs-basic-min.js
 
 copyright: Copyright &copy; 2024 0x7C00
 
