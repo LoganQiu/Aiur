@@ -102,6 +102,10 @@ nav:
 extra_css:
   - stylesheets/extra.css
 
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/abcjs@6.2.3/dist/abcjs-basic-min.js
+  - javascripts/abc.js
+
 copyright: Copyright &copy; 2024 0x7C00
 
 markdown_extensions:
@@ -136,6 +140,9 @@ markdown_extensions:
       custom_fences:
         - name: mermaid
           class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+        - name: abc
+          class: abc
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
