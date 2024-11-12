@@ -95,6 +95,8 @@ hooks:
 nav:
   - Home: index.md
   - Tags: tags.md
+  - Wiki:
+      - Anime-Intro: wiki/Anime Intro.md
   - Blog:
       - blog/index.md
       - blog/tags.md
