@@ -1,6 +1,6 @@
 site_name: 韬钤深处
 site_description: 无
-site_url: https://loganqiu.github.io/aiur
+site_url: https://loganqiu.github.io
 # Configuration
 theme:
   name: material
