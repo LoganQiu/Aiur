@@ -1,0 +1,2032 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="无">
+      
+      
+      
+        <link rel="canonical" href="https://loganqiu.github.io/wiki/learn-git/">
+      
+      
+        <link rel="prev" href="../books-intro/">
+      
+      
+        <link rel="next" href="../music-distribution/">
+      
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../feed_rss_updated.xml">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.44">
+    
+    
+      
+        <title>Learn Git - 韬钤深处</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Learn Git - 韬钤深处" >
+      
+        <meta  property="og:description"  content="无" >
+      
+        <meta  property="og:image"  content="https://loganqiu.github.io/assets/images/social/wiki/learn-git.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://loganqiu.github.io/wiki/learn-git/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Learn Git - 韬钤深处" >
+      
+        <meta  name="twitter:description"  content="无" >
+      
+        <meta  name="twitter:image"  content="https://loganqiu.github.io/assets/images/social/wiki/learn-git.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#learning-git" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="韬钤深处" class="md-header__button md-logo" aria-label="韬钤深处" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            韬钤深处
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Learn Git
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 2a8 8 0 0 1 8 8 8 8 0 0 1-8 8z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391l-19.9 107.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121l19.9-107.9c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1l90.3-62.3c4.5-3.1 10.2-3.7 15.2-1.6M160 256a96 96 0 1 1 192 0 96 96 0 1 1-192 0m224 0a128 128 0 1 0-256 0 128 128 0 1 0 256 0"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M144.7 98.7c-21 34.1-33.1 74.3-33.1 117.3 0 98 62.8 181.4 150.4 211.7-12.4 2.8-25.3 4.3-38.6 4.3C126.6 432 48 353.3 48 256c0-68.9 39.4-128.4 96.8-157.3zm62.1-66C91.1 41.2 0 137.9 0 256c0 123.7 100 224 223.5 224 47.8 0 92-15 128.4-40.6 1.9-1.3 3.7-2.7 5.5-4 4.8-3.6 9.4-7.4 13.9-11.4 2.7-2.4 5.3-4.8 7.9-7.3 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-3.7.6-7.4 1.2-11.1 1.6-5 .5-10.1.9-15.3 1h-4c-96.8-.2-175.2-78.9-175.2-176 0-54.8 24.9-103.7 64.1-136 1-.9 2.1-1.7 3.2-2.6 4-3.2 8.2-6.2 12.5-9 3.1-2 6.3-4 9.6-5.8 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-3.6-.3-7.1-.5-10.7-.6-2.7-.1-5.5-.1-8.2-.1-3.3 0-6.5.1-9.8.2-2.3.1-4.6.2-6.9.4z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+    
+  
+  Wiki
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../blog/" class="md-tabs__link">
+          
+  
+    
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../repost/" class="md-tabs__link">
+          
+  
+    
+  
+  Repost
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="韬钤深处" class="md-nav__button md-logo" aria-label="韬钤深处" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    韬钤深处
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Wiki
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Wiki
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../anime-intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Anime Intro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bleach-intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bleach Inrto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bleach-preface/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bleach Preface
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../books-intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Books Intro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Learn Git
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Learn Git
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      基本概念
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="基本概念">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      创建仓库
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      提交与修改
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      提交日志
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      远程操作
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#credentialhelper" class="md-nav__link">
+    <span class="md-ellipsis">
+      credential.helper 账密操作
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="credential.helper 账密操作">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      说明
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      一、系统级
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、系统级">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-store" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.设置记录账户密码，模式为 store
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.取消(删除)记录账号和密码
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.查询 凭证存储模式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.修改 配置文件
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      二、用户级
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、用户级">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.设置账号密码当前登录用户，全局项目 git 仓库有效
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.取消(删除)记录账号和密码
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.查询 凭证存储模式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.修改 配置文件
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      三、项目级
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、项目级">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-git_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.设置账号密码当前项目 git 仓库有效
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.取消(删除)记录账号和密码
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.查询 凭证存储模式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.修改 配置文件
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      四、临时记住密码
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      五、其他
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、其他">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.可选凭证存储模式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.如果是 manager 模式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.命令行添加到管理凭据
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../music-distribution/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Music Distribution
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../protocol/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Protocol
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../proxy-platform/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Proxy Platform
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../qimendunjia/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    奇门遁甲
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../blog/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Blog
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Blog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blog/tags/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tag index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Archive
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Archive
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blog/archive/2023/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    December 2023
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../repost/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Repost
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Repost
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../repost/side-project-guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Side Project Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../repost/why-domestic-BT-env-so-bad/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    为什么国内 BT 环境如此恶劣？
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../repost/when-you-think-using-Apple-fonts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    当你以为自己用的是苹果系统字体
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../repost/the-death-of-Baidu/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    百度之死
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      基本概念
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="基本概念">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      创建仓库
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      提交与修改
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      提交日志
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      远程操作
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#credentialhelper" class="md-nav__link">
+    <span class="md-ellipsis">
+      credential.helper 账密操作
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="credential.helper 账密操作">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      说明
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      一、系统级
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、系统级">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-store" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.设置记录账户密码，模式为 store
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.取消(删除)记录账号和密码
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.查询 凭证存储模式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.修改 配置文件
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      二、用户级
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、用户级">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.设置账号密码当前登录用户，全局项目 git 仓库有效
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.取消(删除)记录账号和密码
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.查询 凭证存储模式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.修改 配置文件
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      三、项目级
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、项目级">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-git_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.设置账号密码当前项目 git 仓库有效
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.取消(删除)记录账号和密码
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.查询 凭证存储模式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.修改 配置文件
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      四、临时记住密码
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      五、其他
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、其他">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.可选凭证存储模式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.如果是 manager 模式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.命令行添加到管理凭据
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="learning-git">Learning Git<a class="headerlink" href="#learning-git" title="Permanent link">&para;</a></h1>
+<h2 id="_1">基本概念<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>flowchart LR
+    id1[(workspace)]--add--&gt;id2[(stage/index)]--commit--&gt;id3[(local repository)]
+    id3--push--&gt;id4[(remote repository)]--fetch/clone--&gt;id3--checkout--&gt;id1
+    id4--pull--&gt;id1
+    style id1 fill:#a2f966
+    style id2 fill:#fff300, stroke:#fff1bb, stroke-width:6px
+    style id3 fill:#5c9bd6
+    style id4 fill:#eb6032</code></pre>
+<h3 id="_2">创建仓库<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">命令</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>git init</code></td>
+<td style="text-align: left;">初始化仓库</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>git clone &lt;url&gt;</code></td>
+<td style="text-align: left;">克隆远程版本库</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_3">提交与修改<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">命令</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>git add</code></td>
+<td style="text-align: left;">添加文件到暂存区</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>git status</code></td>
+<td style="text-align: left;">查看仓库当前的状态，显示有变更的文件。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>git diff</code></td>
+<td style="text-align: left;">比较文件的不同，即暂存区和工作区的差异。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>git commit</code></td>
+<td style="text-align: left;">提交暂存区到本地仓库。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>git reset</code></td>
+<td style="text-align: left;">回退版本。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>git rm</code></td>
+<td style="text-align: left;">将文件从暂存区和工作区中删除。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>git mv</code></td>
+<td style="text-align: left;">移动或重命名工作区文件。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_4">提交日志<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">命令</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>git log</code></td>
+<td style="text-align: left;">查看历史提交记录</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>git blame &lt;file&gt;</code></td>
+<td style="text-align: left;">以列表形式查看指定文件的历史修改记录</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_5">远程操作<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">命令</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>git remote</code></td>
+<td style="text-align: left;">远程仓库操作</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>git fetch</code></td>
+<td style="text-align: left;">从远程获取代码库</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>git pull</code></td>
+<td style="text-align: left;">下载远程代码并合并</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>git push</code></td>
+<td style="text-align: left;">上传远程代码并合并</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>
+<p><code>rm &lt;file&gt;</code> 可以在任何文件夹都可以用，包括不是 git 仓库的地方，是用来删除文件。如果用在 git 仓库里，则可以视为<strong>删除工作区的文件</strong>。</p>
+</li>
+<li>
+<p><code>git rm &lt;file&gt;</code> 只能在 git 仓库里使用，是用来删除 <strong>[工作区+暂存区]</strong> 的文件用的。如果在 git 仓库外使用就会报错。</p>
+</li>
+<li>
+<p><code>git rm --cached &lt;file&gt;</code> 如果想<strong>仅删除暂存区</strong>里的文件可以用此命令，它不会删除工作区中的文件。</p>
+</li>
+<li>
+<p>如果想删除 HEAD 仓库里的文件，好像没有专门的命令，只能 commit 作 log。具体操作是：rm→add→commit 或 git rm→commit。</p>
+</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>如果想知道 HEAD 指向，可以通过 <code>cat .git/HEAD</code> 查看；若 HEAD 指向的是一个引用，还可以用 <code>git symbolic-ref HEAD</code> 查看。</p>
+<ul>
+<li><code>HEAD~</code> 后面加数字表示后退的步数，每次后退都默认退到第一个父提交上，<code>HEAD~2</code> 表示连退两步。</li>
+<li><code>HEAD^</code> 后面加数字表示只退一步，但是这一步后退到数字表示的父提交上，<code>HEAD^2</code> 表示退一步到第二个父提交上。</li>
+</ul>
+</div>
+<div class="highlight"><pre><span></span><code>git init                                                  # 初始化本地git仓库（创建新仓库）
+git config --global user.name &quot;xxx&quot;                       # 配置用户名
+git config --global user.email &quot;xxx@xxx.com&quot;              # 配置邮件
+git config --global color.ui true                         # git status等命令自动着色
+git config --global color.status auto
+git config --global color.diff auto
+git config --global color.branch auto
+git config --global color.interactive auto
+git config --global --unset http.proxy                    # remove  proxy configuration on git
+git clone git+ssh://git@192.168.53.168/VT.git             # clone远程仓库
+git status                                                # 查看当前版本状态（是否修改）
+git add xyz                                               # 添加xyz文件至index
+git add .                                                 # 增加当前子目录下所有更改过的文件至index
+git commit -m &#39;xxx&#39;                                       # 提交
+git commit --amend -m &#39;xxx&#39;                               # 合并上一次提交（用于反复修改）
+git commit -am &#39;xxx&#39;                                      # 将add和commit合为一步
+git rm xxx                                                # 删除index中的文件
+git rm -r *                                               # 递归删除
+git log                                                   # 显示提交日志
+git log -2                                                # 显示2行日志 -n为n行
+git log --stat                                            # 显示提交日志及相关变动文件
+git log -p -m
+git show dfb02e6e4f2f7b573337763e5c0013802e392818         # 显示某个提交的详细内容
+git show dfb02                                            # 可只用commitid的前几位
+git show HEAD                                             # 显示HEAD提交日志
+git tag                                                   # 显示已存在的tag
+git tag -a v2.0 -m &#39;xxx&#39;                                  # 增加v2.0的tag
+git show v2.0                                             # 显示v2.0的日志及详细内容
+git log v2.0                                              # 显示v2.0的日志
+git diff                                                  # 显示所有未添加至index的变更
+git diff --cached                                         # 显示所有已添加index但还未commit的变更
+git diff HEAD^                                            # 比较与上一个版本的差异
+git diff HEAD -- ./lib                                    # 比较与HEAD版本lib目录的差异
+git diff origin/master..master                            # 比较远程分支master上有本地分支master上没有的
+git diff origin/master..master --stat                     # 只显示差异的文件，不显示具体内容
+git remote add origin git+ssh://git@192.168.53.168/VT.git # 增加远程定义（用于push/pull/fetch）
+git branch                                                # 显示本地分支
+git branch --contains 50089                               # 显示包含提交50089的分支
+git branch -a                                             # 显示所有分支
+git branch -f master HEAD^                                # 将分支master强制移动到HEAD父节点
+git branch -r                                             # 显示所有原创分支
+git branch --merged                                       # 显示所有已合并到当前分支的分支
+git branch --no-merged                                    # 显示所有未合并到当前分支的分支
+git branch -m master master_copy                          # 本地分支改名
+git branch -d hotfixes/BJVEP933                           # 删除分支hotfixes/BJVEP933（本分支修改已合并到其他分支）
+git branch -D hotfixes/BJVEP933                           # 强制删除分支hotfixes/BJVEP933
+git checkout -b master_copy                               # 从当前分支创建新分支master_copy并检出
+git checkout -b master master_copy                        # 上面的完整版
+git checkout features/performance                         # 检出已存在的features/performance分支
+git checkout --track hotfixes/BJVEP933                    # 检出远程分支hotfixes/BJVEP933并创建本地跟踪分支
+git checkout v2.0                                         # 检出版本v2.0
+git checkout -b devel origin/develop                      # 从远程分支develop创建新本地分支devel并检出
+git checkout -- README                                    # 检出head版本的README文件（可用于修改错误回退）
+git merge origin/master                                   # 合并远程master分支至当前分支
+git cherry-pick ff44785404a8e                             # 合并提交ff44785404a8e的修改
+git push origin master                                    # 将当前分支push到远程master分支
+git push origin :hotfixes/BJVEP933                        # 删除远程仓库的hotfixes/BJVEP933分支
+git push --tags                                           # 把所有tag推送到远程仓库
+git fetch                                                 # 获取所有远程分支（不更新本地分支，另需merge）
+git fetch --prune                                         # 获取所有原创分支并清除服务器上已删掉的分支
+git pull origin master                                    # 获取远程分支master并merge到当前分支
+git mv README README2                                     # 重命名文件README为README2
+git reset --hard HEAD                                     # 将当前版本重置为HEAD（通常用于merge失败回退）
+git rebase
+git ls-files                                              # 列出git index包含的文件
+git show-branch                                           # 图示当前分支历史
+git show-branch --all                                     # 图示所有分支历史
+git whatchanged                                           # 显示提交历史对应的文件修改
+git revert dfb02e6e4f2f7b573337763e5c0013802e392818       # 撤销提交dfb02e6e4f2f7b573337763e5c0013802e392818
+git ls-tree HEAD                                          # 内部命令：显示某个git对象
+git rev-parse v2.0                                        # 内部命令：显示某个ref对于的SHA1 HASH
+git reflog                                                # 显示所有提交，包括孤立节点
+git show HEAD@{5}
+git show master@{yesterday}                               # 显示master分支昨天的状态
+git log --pretty=format:&#39;%h %s&#39; --graph                   # 图示提交日志
+git show -s --pretty=raw 2be7fcb476
+git stash                                                 # 暂存当前修改，将所有至为HEAD状态
+git stash list                                            # 查看所有暂存
+git stash show -p stash@{0}                               # 参考第一次暂存
+git stash apply stash@{0}                                 # 应用第一次暂存
+git grep &quot;delete from&quot;                                    # 文件中搜索文本“delete from”
+git grep -e &#39;#define&#39; --and -e SORT_DIRENT
+git gc
+git fsck
+</code></pre></div>
+<hr />
+<p>作者：<a href="https://www.cnblogs.com/wutou/">悟透</a><br />
+原文链接：<a href="https://www.cnblogs.com/wutou/p/17585668.html">https://www.cnblogs.com/wutou/p/17585668.html</a></p>
+<h2 id="credentialhelper">credential.helper 账密操作<a class="headerlink" href="#credentialhelper" title="Permanent link">&para;</a></h2>
+<h3 id="_6">说明<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p>Git 使用简单的 <code>.ini</code> 文件作为配置文件，配置文件中记录了很多 Git 命令使用的各种选项和设置，Git 支持不同级别的配置文件，下面按照优先级从高到低的顺序对它们进行介绍：</p>
+<blockquote>
+<p><code>.git/config</code> 当前版本库特定的配置文件，可使用 --file 选项修改，是 Git 的默认选项，此文件具有最高优先级。<br />
+<code>~/.gitconfig</code> 当前用户的配置文件，可使用 --global 选项修改。<br />
+<code>/etc/gitconfig</code> 系统级别的配置文件，可使用 --system 选项修改，此文件中的设置优先级最低。（Windows 的 etc 路径在你安装 git 目录下，默认 <code>C:\Program Files\Git\etc\gitconfig</code>）</p>
+</blockquote>
+<p>注意：不要将配置文件路径设置到项目文件夹里，会泄露账号密码<br />
+注意：不要将配置文件路径设置到项目文件夹里，会泄露账号密码<br />
+注意：不要将配置文件路径设置到项目文件夹里，会泄露账号密码</p>
+<h3 id="_7">一、系统级<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<p>整台电脑上的所有用户都有效：（不推荐）<br />
+配置项写入到 "C:\Program Files\Git\etc\gitconfig" 文件中。</p>
+<h4 id="1-store">1.设置记录账户密码，模式为 store<a class="headerlink" href="#1-store" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--system<span class="w"> </span>credential.helper<span class="w"> </span>store
+</code></pre></div>
+<h4 id="2">2.取消(删除)记录账号和密码<a class="headerlink" href="#2" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--system<span class="w"> </span>--unset<span class="w"> </span>credential.helper
+</code></pre></div>
+<h4 id="3">3.查询 凭证存储模式<a class="headerlink" href="#3" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--system<span class="w"> </span>credential.helper或git<span class="w"> </span>config<span class="w"> </span>--system<span class="w"> </span>--list或git<span class="w"> </span>config<span class="w"> </span>--system<span class="w"> </span>-l
+</code></pre></div>
+<h4 id="4">4.修改 配置文件<a class="headerlink" href="#4" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--file<span class="o">=</span><span class="s2">&quot;C:\Program Files\Git\etc\gitconfig&quot;</span><span class="w"> </span>--system<span class="w"> </span>credential.helper<span class="w"> </span><span class="s2">&quot;store&quot;</span>或git<span class="w"> </span>config<span class="w"> </span>--system<span class="w">  </span>user.name<span class="w"> </span><span class="s2">&quot;store&quot;</span>
+</code></pre></div>
+<p>以上命令，不推荐使用：</p>
+<blockquote>
+<p>1.需要在 git bash 上右键--"以管理员身份运行" 或 需要给 <code>C:\Program Files\Git\</code>下 etc 文件夹，everyone 完全控制权限，才能执行成功。<br />
+2.如果没有权限会提示 “error: could not lock config file C:/Program Files/Git/etc/gitconfig: Permission denied”</p>
+</blockquote>
+<h3 id="_8">二、用户级<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<p>当前用户下，所有项目有效：<br />
+配置项写入到 <code>C:\Users\用户名\.gitconfig</code> 文件中。</p>
+<h4 id="1-git">1.设置账号密码当前登录用户，全局项目 git 仓库有效<a class="headerlink" href="#1-git" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>credential.helper<span class="w"> </span>store或git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>credential.helper<span class="w"> </span>manager
+</code></pre></div>
+<h4 id="2_1">2.取消(删除)记录账号和密码<a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>--unset<span class="w"> </span>credential.helper
+</code></pre></div>
+<h4 id="3_1">3.查询 凭证存储模式<a class="headerlink" href="#3_1" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>credential.helper或git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>--list或git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>-l
+</code></pre></div>
+<h4 id="4_1">4.修改 配置文件<a class="headerlink" href="#4_1" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--file<span class="o">=</span>~/.git_credentails<span class="w"> </span>--global<span class="w"> </span>credential.helper<span class="w"> </span><span class="s2">&quot;store&quot;</span>或git<span class="w"> </span>config<span class="w"> </span>--global<span class="w">  </span>user.name<span class="w"> </span><span class="s2">&quot;store&quot;</span>
+</code></pre></div>
+<h3 id="_9">三、项目级<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<p>只在当前项仓库下有效，在有 .git 文件夹下执行：<br />
+配置项写入到项目的 ".git/config" 文件中。</p>
+<h4 id="1-git_1">1.设置账号密码当前项目 git 仓库有效<a class="headerlink" href="#1-git_1" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>credential.helper<span class="w"> </span>store
+</code></pre></div>
+<blockquote>
+<p>如果没有--global，则在当前项目下的.git/config 文件中添加。</p>
+</blockquote>
+<h4 id="2_2">2.取消(删除)记录账号和密码<a class="headerlink" href="#2_2" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--unset<span class="w"> </span>credential.helper
+</code></pre></div>
+<h4 id="3_2">3.查询 凭证存储模式<a class="headerlink" href="#3_2" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>credential.helper或git<span class="w"> </span>config<span class="w"> </span>--list或git<span class="w"> </span>config<span class="w"> </span>-l
+</code></pre></div>
+<blockquote>
+<p>如果当前项目下没有设置，则显示 --global 的模式</p>
+</blockquote>
+<h4 id="4_2">4.修改 配置文件<a class="headerlink" href="#4_2" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--file<span class="o">=</span>.git/config<span class="w"> </span>credential.helper<span class="w"> </span><span class="s2">&quot;store&quot;</span>或git<span class="w"> </span>config<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;store&quot;</span>
+</code></pre></div>
+<h3 id="_10">四、临时记住密码<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<p>1）默认记住 15 分钟：</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>credential.helper<span class="w"> </span>cache
+</code></pre></div>
+<p>2）记住 1 小时：</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>credential.helper<span class="w"> </span><span class="s1">&#39;cache --timeout=3600&#39;</span>
+</code></pre></div>
+<h3 id="_11">五、其他<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<h4 id="1">1.可选凭证存储模式<a class="headerlink" href="#1" title="Permanent link">&para;</a></h4>
+<p>https://zhuanlan.zhihu.com/p/157751660</p>
+<ul>
+<li><strong>"cache" 模式</strong><br />
+   会将凭证存放在内存中一段时间。 密码永远不会被存储在磁盘中，并且在 15 分钟后从内存中清除。</li>
+<li><strong>"store" 模式</strong><br />
+   会将凭证用明文的形式存放在磁盘中，并且永不过期。<br />
+   这意味着除非你修改了你在 Git 服务器上的密码，否则你永远不需要再次输入你的凭证信息。<br />
+   这种方式的缺点是你的密码是用明文的方式存放在你的 home 目录下。</li>
+<li><strong>"osxkeychain" 模式</strong><br />
+   如果你使用的是 Mac，Git 还有一种 “osxkeychain” 模式，它会将凭证缓存到你系统用户的钥匙串中。<br />
+   这种方式将凭证存放在磁盘中，并且永不过期，但是是被加密的，这种加密方式与存放 HTTPS 凭证以及 Safari 的自动填写是相同的。</li>
+<li><strong>"manager" 模式</strong><br />
+   如果你使用的是 Windows，你可以安装一个叫做 “Git Credential Manager for Windows” 的辅助工具。<br />
+   这和上面说的 “osxkeychain” 十分类似，但是是使用 Windows Credential Store 来控制敏感信息。</li>
+</ul>
+<h4 id="2-manager">2.如果是 manager 模式<a class="headerlink" href="#2-manager" title="Permanent link">&para;</a></h4>
+<p>https://www.jianshu.com/p/8d8fb86e415a</p>
+<blockquote>
+<p>使用命令后，凭据会被记录到系统的凭据管理里。<br />
+位置: 控制面板--用户账户--凭据管理--windows 凭据，查看和删除。</p>
+</blockquote>
+<h4 id="3_3">3.命令行添加到管理凭据<a class="headerlink" href="#3_3" title="Permanent link">&para;</a></h4>
+<p>1）删除某个存储在 “windows 凭据” 的账号密码</p>
+<div class="highlight"><pre><span></span><code>cmdkey<span class="w"> </span>/delete:git:https://gitee.com
+</code></pre></div>
+<p>2）添加某个存储在 "windows 凭据" 的账号密码</p>
+<div class="highlight"><pre><span></span><code>cmdkey<span class="w"> </span>/generic:git:http://gitee.com<span class="w"> </span>/user:%username%<span class="w"> </span>/password:%password%
+</code></pre></div>
+<blockquote>
+<p>1.或者可以在 “windows 凭据” 管理界面，点击 “添加普通凭证”<br />
+2.%username% 和 %password% 代表当前登录 Windows 用户的账号密码<br />
+3.提示“找不到元素”，可能是凭据名称输入错误</p>
+<p>添加后，凭据管理界面，返回 或 重新点击“windows 凭据” 刷新显示，新的凭据</p>
+</blockquote>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 0x7C00
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://space.bilibili.com/439983453" target="_blank" rel="noopener" title="Dualvector_Foil" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M488.6 104.1c16.7 18.1 24.4 39.7 23.3 65.7v202.4c-.4 26.4-9.2 48.1-26.5 65.1-17.2 17-39.1 25.9-65.5 26.7H92.02c-26.45-.8-48.21-9.8-65.28-27.2C9.682 419.4.767 396.5 0 368.2V169.8c.767-26 9.682-47.6 26.74-65.7C43.81 87.75 65.57 78.77 92.02 78h29.38L96.05 52.19c-5.75-5.73-8.63-13-8.63-21.79 0-8.8 2.88-16.06 8.63-21.797C101.8 2.868 109.1 0 117.9 0q13.2 0 21.9 8.603L213.1 78h88l74.5-69.397C381.7 2.868 389.2 0 398 0q13.2 0 21.9 8.603c5.7 5.737 8.6 12.997 8.6 21.797 0 8.79-2.9 16.06-8.6 21.79L394.6 78h29.3c26.4.77 48 9.75 64.7 26.1m-38.8 69.7c-.4-9.6-3.7-17.4-10.7-23.5-5.2-6.1-14-9.4-22.7-9.8H96.05c-9.59.4-17.45 3.7-23.58 9.8-6.14 6.1-9.4 13.9-9.78 23.5v194.4c0 9.2 3.26 17 9.78 23.5s14.38 9.8 23.58 9.8H416.4c9.2 0 17-3.3 23.3-9.8s9.7-14.3 10.1-23.5zm-264.3 42.7c6.3 6.3 9.7 14.1 10.1 23.2V273c-.4 9.2-3.7 16.9-9.8 23.2-6.2 6.3-14 9.5-23.6 9.5s-17.5-3.2-23.6-9.5-9.4-14-9.8-23.2v-33.3c.4-9.1 3.8-16.9 10.1-23.2s13.2-9.6 23.3-10c9.2.4 17 3.7 23.3 10m191.5 0c6.3 6.3 9.7 14.1 10.1 23.2V273c-.4 9.2-3.7 16.9-9.8 23.2s-14 9.5-23.6 9.5-17.4-3.2-23.6-9.5c-7-6.3-9.4-14-9.7-23.2v-33.3c.3-9.1 3.7-16.9 10-23.2s14.1-9.6 23.3-10c9.2.4 17 3.7 23.3 10"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.code.select", "content.tooltips", "navigation.indexes", "navigation.instant", "navigation.instant.progress", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../../javascripts/abc.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/abcjs@6.2.3/dist/abcjs-basic-min.js"></script>
+      
+    
+  </body>
+</html>

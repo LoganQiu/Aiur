@@ -1,0 +1,11 @@
+/* 设置 admonition 的样式 */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 0;
+}
+
+/* 设置切换按钮的图标大小 */
+.md-header__option .md-icon svg {
+  width: 1rem !important;
+  height: 1rem !important;
+}
